@@ -4,6 +4,7 @@ public class Gerente extends Funcionario {
     // quando vc nao atribui nada ao atributos ele inicializa com 0.
     private int senha;
 
+
     public void setSenha(int senha) {
         this.senha = senha;
     }
@@ -17,7 +18,7 @@ public class Gerente extends Funcionario {
     }
 
     public double getBonificacao(){
-        return getSalario();
+        return super.getBonificacao() + super.getSalario();
     }
 
 }

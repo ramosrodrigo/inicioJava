@@ -7,5 +7,6 @@ public class TesteFuncionario {
 
         System.out.println(funcionario.getNome());
         System.out.println(funcionario.getBonificacao());
+
     }
 }
