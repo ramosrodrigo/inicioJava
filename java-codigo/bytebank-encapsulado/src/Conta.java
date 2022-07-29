@@ -4,7 +4,7 @@ public class Conta {
     private int agencia;
     private int numero;
     private Cliente titular;
-    private static int totalDeContas;
+    private static int totalDeContas = 0;
 
     // construtor:
     //public Conta(){
