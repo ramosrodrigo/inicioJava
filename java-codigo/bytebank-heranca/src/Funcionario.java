@@ -5,7 +5,7 @@ public class Funcionario {
 
     // metodo para calcular a bonificacao, que é de 10%:
     public double getBonificacao(){
-        return this.salario * 0.1;
+        return this.salario * 0.05;
     }
 
     public String getNome() {
