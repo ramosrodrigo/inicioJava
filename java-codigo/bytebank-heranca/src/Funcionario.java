@@ -1,12 +1,14 @@
-public class Funcionario {
+// não pode instanciar dessa classe, porque ela eh abstrata
+// nao pode usar o new
+
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private double salario;
 
-    // metodo para calcular a bonificacao, que é de 10%:
-    public double getBonificacao(){
-        return this.salario * 0.05;
-    }
+    // metodo sem corpo nao pode haver implementação, caso nao tenha
+    // o primeiro filho concreto precisa implementar esse metodo
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;
