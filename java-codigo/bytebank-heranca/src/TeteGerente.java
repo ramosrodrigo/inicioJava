@@ -1,5 +1,8 @@
 public class TeteGerente {
     public static void main(String[] args) {
+
+        Autenticavel referencia = new Cliente();
+
         Gerente gerente = new Gerente();
         gerente.setNome("robson");
         gerente.setCpf("16515611");

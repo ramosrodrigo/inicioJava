@@ -1,14 +1,15 @@
-// Gerente herda da classe funcionario, pois o gerente eh um funcionario
+// Gerente eh um Funcionario, Gerente herda da classe Funcionario, assina o contrato Autenticavel, eh um autenticavel
 
-public class Gerente extends Funcionario {
+public class Gerente extends Funcionario implements Autenticavel {
     // quando vc nao atribui nada ao atributos ele inicializa com 0.
     private int senha;
 
-
+    @Override
     public void setSenha(int senha) {
         this.senha = senha;
     }
 
+    @Override
     public boolean autentica(int senha){
         if(this.senha == senha){
             return true;
